@@ -4,12 +4,19 @@ verify_ssl = true
 name = "pypi"
 
 [dev-packages]
-config = "*"
+pylint = "*"
+ipykernel = "*"
+black = "*"
 
 [scripts]
 
 [requires]
 
 [packages]
-tensorflow = "*"
-keras = "*"
+tensorflow = "==1.15.3"
+keras = "==2.1.6"
+protobuf = "<=3.20.1"
+scikit-image = "*"
+numpy = "*"
+h5py = "==2.10.0"
+matplotlib = "*"
