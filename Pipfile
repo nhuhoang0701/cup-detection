@@ -4,9 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [dev-packages]
+config = "*"
 
 [scripts]
 
 [requires]
 
 [packages]
+tensorflow = "*"
+keras = "*"
