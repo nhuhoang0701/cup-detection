@@ -83,7 +83,7 @@ class EcocupConfig(config.Config):
     # Number of classes (background + ecocup)
     NUM_CLASSES = 1 + 1
     # Number of training steps per epoch
-    STEPS_PER_EPOCH = 10
+    STEPS_PER_EPOCH = 50
 
 
 dataset_dirs = ["./train_p21", "./train_p22"]
@@ -112,6 +112,6 @@ model.load_weights(
 # %%
 # train weights (output layers or "heads")
 model.train(
-    train_set, test_set, learning_rate=ecocup_config.LEARNING_RATE, epochs=5, layers="heads"
+    train_set, test_set, learning_rate=ecocup_config.LEARNING_RATE, epochs=10, layers="heads"
 )
 
