@@ -5,7 +5,6 @@ import os
 import sys
 import resource
 import numpy as np
-import helper
 import matplotlib.pyplot as plt
 from importlib import reload
 from rich import print
@@ -17,7 +16,7 @@ ROOT_DIR = os.path.abspath("./")
 MASK_RCNN_DIR = os.path.join(ROOT_DIR, "Mask_RCNN")
 sys.path.append(MASK_RCNN_DIR)
 from mrcnn import utils, config, model, visualize
-
+import helper
 
 # %%
 class EcoCupDataset(utils.Dataset):
